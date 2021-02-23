@@ -4,7 +4,6 @@ import cv2
 import argparse
 from tqdm import tqdm
 import glob
-import cvlib as cv
 import numpy as np
 from PIL import Image
 import os
