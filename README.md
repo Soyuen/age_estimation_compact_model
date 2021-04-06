@@ -28,9 +28,12 @@ cd ./training
 python train.py --input ../data/imdb.npz --db imdb
 python train.py --input ../data/wiki.npz --db wiki  --batch_size 50
 ```
+
 <br/>
+
 Measure the execution time on [GEFORCE RTX 2070](https://www.nvidia.com/en-us/geforce/graphics-cards/rtx-2070/).  
 Because the official model of C3AE is unavailable, cannot perform the following tasks.
+
 <br/>
 
 |  Model  | Imdb(MAE)  | Wiki(MAE)  | Parameters |Model Size|Execution time|                        |
