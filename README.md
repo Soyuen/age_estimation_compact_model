@@ -1,5 +1,5 @@
 ## Age estimation compact model
- <img src="https://github.com/Soyuen/age_estimation_compact_model/blob/main/image/output.jpg" width = "393" height = "393" alt="output" align=center />
+ <img src="https://github.com/Soyuen/age_estimation_compact_model/blob/main/image/output.jpg" width = "200" height = "200" alt="output" align=center />
 ## Requirements
 * Anaconda
 * Python 3.7
