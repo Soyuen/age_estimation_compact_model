@@ -39,7 +39,7 @@ Because the official model of C3AE is unavailable, cannot perform the following 
 |C3AE     |   6.57     |    6.44    |   36345    |  198KB   |   --         |Plain model(from papper)|
 |AEC_model|   6.28     |    6.21    |   20014    |  184KB   |  2.3 ms      |our model               |
  
- <img src="./blob/main/image/image.jpg" width = "507" height = "273" alt="result" align=center />
+ <img src="https://github.com/Soyuen/age_estimation_compact_model/blob/main/image/image.jpg" width = "507" height = "273" alt="result" align=center />
 ## Reference
 C3AE : https://arxiv.org/pdf/1904.05059.pdf  
 SSR-net : https://github.com/shamangary/SSR-Net
