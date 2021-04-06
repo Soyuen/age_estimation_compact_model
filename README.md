@@ -22,7 +22,7 @@ python imdbwiki_filter.py
 python imdbwiki_pre.py
 ```
 ### Training  model
-Training model with 90 epochs.The batch size is respectively 128 on Imdb dataset and 50 on Wiki dataset.(the same setting with SSR-Net)
+Training model with 90 epochs.The batch size is 128 on Imdb dataset and 50 on Wiki dataset.(the same setting with SSR-Net)
 ```
 cd ./training
 python train.py --input ../data/imdb.npz --db imdb
