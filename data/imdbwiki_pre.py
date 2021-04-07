@@ -8,10 +8,8 @@ import numpy as np
 from PIL import Image
 import os
 def get_args():
-    parser = argparse.ArgumentParser(description="This script cleans-up noisy labels "
-                                                 "and creates database for training.",
-                                     formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-    parser.add_argument("--db", type=str, default="wiki",
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--db", type=str, default="imdb",
                         help="dataset; wiki or imdb")
     args = parser.parse_args()
     return args
