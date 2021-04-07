@@ -43,12 +43,11 @@ def data_generator_reg(X,Y,Y20,Y4,batch_size):
         Y = Y[idxs]  
         Y20=Y20[idxs] 
         Y4=Y4[idxs] 
-        #Y1=Y1[idxs] 
         p,q,q1,q2,q3 = [],[],[],[],[]
         for i in range(len(X)):
             p.append(X[i])
             q.append(Y[i])
-            q1.append(20*Y20[i]+4*Y4[i])
+            q1.append(Y20[i]+Y4[i])
             q2.append(Y[i])
             q3.append(Y[i])
             if len(p) == batch_size:
