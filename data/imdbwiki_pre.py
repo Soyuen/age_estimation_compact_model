@@ -68,7 +68,7 @@ def main():
             continue
         out_ages.append(int(birth(i)))
         out_imgs.append(cv2.resize(cropped, (64, 64)))
-        out_20ns.append(int(birth(i))//20*2)
+        out_20ns.append(int(birth(i))//20*20)
         out_4ns.append(int(birth(i))%20//4*4)
         out_1ns.append(int(birth(i))%20%4)
         del cropped,box
