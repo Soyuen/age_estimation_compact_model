@@ -6,10 +6,8 @@ from TYY_utils import get_meta
 import shutil
 
 def get_args():
-    parser = argparse.ArgumentParser(description="This script cleans-up noisy labels "
-                                                 "and creates database for training.",
-                                     formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-    parser.add_argument("--db", type=str, default="wiki",
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--db", type=str, default="imdb",
                         help="dataset; wiki or imdb")
     parser.add_argument("--min_score", type=float, default=1.0,
                         help="minimum face_score")
