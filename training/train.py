@@ -88,14 +88,12 @@ def main():
     x_test = x_data[train_num:]
     y_train_a = y_data_a[:train_num]
     y_test_a = y_data_a[train_num:]
-    y20_train = y20_data[:train_num]
     y4_train = y4_data[:train_num]+y20_data[:train_num]
     y4_test = y4_data[train_num:]+y20_data[train_num:]
-    y1_test = y_data_a[train_num:]
     
-    hist = model.fit_generator(generator=data_generator_reg(X=x_train, Y=y_train_a,Y20=y20_train,Y4=y4_train,batch_size=batch_size),
+    hist = model.fit_generator(generator=data_generator_reg(X=x_train, Y=y_train_a,Y4=y4_train,batch_size=batch_size),
                                    steps_per_epoch=train_num // batch_size,
-                                   validation_data=(x_test,{'pred_a': y_test_a,'pre_4':y4_test,'pre_1':y1_test,'pre_cod':y_test_a}),
+                                   validation_data=(x_test,{'pred_a': y_test_a,'pre_4':y4_test,'pre_1':y_test_a,'pre_cod':y_test_a}),
                                    epochs=nb_epochs, verbose=1,
                                    callbacks=callbacks)
     
