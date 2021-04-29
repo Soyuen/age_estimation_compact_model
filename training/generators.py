@@ -35,7 +35,7 @@ def augment_data(images):
     return images
 
 
-def data_generator_reg(X,Y,Y20,Y4,batch_size):
+def data_generator_reg(X,Y,Y4,batch_size):
 
     while True:
         idxs = np.random.permutation(len(X))
@@ -47,7 +47,7 @@ def data_generator_reg(X,Y,Y20,Y4,batch_size):
         for i in range(len(X)):
             p.append(X[i])
             q.append(Y[i])
-            q1.append(Y20[i]+Y4[i])
+            q1.append(Y4[i])
             q2.append(Y[i])
             q3.append(Y[i])
             if len(p) == batch_size:
