@@ -89,7 +89,7 @@ def main():
     y_train_a = y_data_a[:train_num]
     y_test_a = y_data_a[train_num:]
     y20_train = y20_data[:train_num]
-    y4_train = y4_data[:train_num]
+    y4_train = y4_data[:train_num]+y20_data[:train_num]
     y4_test = y4_data[train_num:]+y20_data[train_num:]
     y1_test = y_data_a[train_num:]
     
