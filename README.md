@@ -43,7 +43,7 @@ Because the official model of C3AE is unavailable, cannot perform the following 
 |SSR-Net  |   6.94     |    6.76    |   40915    |  319KB   |  2.9 ms      |original                |
 |SSR-Net  |   6.41     |    7.01    |   40915    |  319KB   |   --         |new data proccessing    |
 |C3AE     |   6.57     |    6.44    |   36345    |  198KB   |   --         |Plain model(from papper)|
-|AEC_model|   6.28     |    6.19    |   20014    |  184KB   |  2.3 ms      |our model               |
+|AEC_model|   6.28     |    6.19    |   20014    |  184KB   |  2.3 ms      |this model               |
  
  <div align=center><img src="https://github.com/Soyuen/age_estimation_compact_model/blob/main/image/image.jpg" width = "507" height = "273" alt="result" align=center /> </div>
  
