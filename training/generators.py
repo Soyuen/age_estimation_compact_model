@@ -40,8 +40,7 @@ def data_generator_reg(X,Y,Y4,batch_size):
     while True:
         idxs = np.random.permutation(len(X))
         X = X[idxs]
-        Y = Y[idxs]  
-        Y20=Y20[idxs] 
+        Y = Y[idxs]
         Y4=Y4[idxs] 
         p,q,q1,q2,q3 = [],[],[],[],[]
         for i in range(len(X)):
